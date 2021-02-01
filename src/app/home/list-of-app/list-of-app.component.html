@@ -1,0 +1,13 @@
+<div class="container">
+  <div  class = "list" *ngFor="let project of projects; index as i">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{projects[i]['projectName']}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Status: {{projects[i]['status']}}</h6>
+        <p class="card-text"> ICTO NUMBER: {{projects[i]['ictoNumber']}}</p>
+        <a [routerLink]="['/cart', project['id']]" class="card-link"> Card {{projects[i]['projectName']}}</a>
+        {{i}}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,128 @@
+<div class="container">
+  <h1>{{project[index]['projectName']}}</h1>
+  <main class="container">
+    <div class="my-3 p-3 bg-white rounded shadow-sm">
+      <h6 class="border-bottom pb-2 mb-0">PSA</h6>
+      <div class="d-flex text-muted pt-1">
+        <div class="pb-2 mb-0 small lh-sm border-bottom w-100">
+          <div class="d-flex justify-content-between">
+            <strong class="text-gray-dark">Project Name: {{project[index]['projectName']}}</strong>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex text-muted pt-1">
+        <div class="pb-2 mb-0 small lh-sm border-bottom w-100">
+          <div class="d-flex justify-content-between">
+            <strong class="text-gray-dark">System name: {{project[index]['systemName']}}</strong>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex text-muted pt-1">
+        <div class="pb-2 mb-0 small lh-sm border-bottom w-100">
+          <div class="d-flex justify-content-between">
+            <strong class="text-gray-dark">Status: {{project[index]['status']}}</strong>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex text-muted pt-1">
+        <div class="pb-2 mb-0 small lh-sm border-bottom w-100">
+          <div class="d-flex justify-content-between">
+            <strong class="text-gray-dark">System Owner for PSA: {{project[index]['systemOwnerForPSA']}}</strong>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex text-muted pt-1">
+        <div class="pb-2 mb-0 small lh-sm border-bottom w-100">
+          <div class="d-flex justify-content-between">
+            <strong class="text-gray-dark">Functional system owner: {{project[index]['functionalSystemOwner']}}</strong>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex text-muted pt-1">
+        <div class="pb-2 mb-0 small lh-sm border-bottom w-100">
+          <div class="d-flex justify-content-between">
+            <strong class="text-gray-dark">Technical SystemOwner: {{project[index]['technicalSystemOwner']}}</strong>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex text-muted pt-1">
+        <div class="pb-2 mb-0 small lh-sm border-bottom w-100">
+          <div class="d-flex justify-content-between">
+            <strong class="text-gray-dark">Functional data system owner OldCO: {{project[index]['functionalDataSystemOwnerOldCO']}}</strong>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex text-muted pt-1">
+        <div class="pb-2 mb-0 small lh-sm border-bottom w-100">
+          <div class="d-flex justify-content-between">
+            <strong class="text-gray-dark">Functional data system owner NewCO	: {{project[index]['functionalDataSystemOwnerNewCO']}}</strong>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex text-muted pt-1">
+        <div class="pb-2 mb-0 small lh-sm border-bottom w-100">
+          <div class="d-flex justify-content-between">
+            <strong class="text-gray-dark">App Ownership: {{project[index]['appOwnership']}}</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex text-muted pt-1">
+        <div class="pb-2 mb-0 small lh-sm">
+          <div class="d-flex justify-content-between">
+            <strong class="text-gray-dark">Infrastructure Ownership: {{project[index]['infrastructureOwnership']}}</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-3 p-3 bg-white rounded shadow-sm">
+      <h6 class="border-bottom pb-2 mb-0">CAPE</h6>
+      <div class="d-flex text-muted pt-1">
+        <div class="pb-2 mb-0 small lh-sm border-bottom w-100">
+          <div class="d-flex justify-content-between">
+            <strong class="text-gray-dark">ICTO NUMBER: {{project[index]['ictoNumber']}}</strong>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex text-muted pt-1">
+        <div class="pb-2 mb-0 small lh-sm border-bottom w-100">
+          <div class="d-flex justify-content-between">
+            <strong class="text-gray-dark">Name: {{project[index]['name']}}</strong>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex text-muted pt-1">
+        <div class="pb-2 mb-0 small lh-sm border-bottom w-100">
+          <div class="d-flex justify-content-between">
+            <strong class="text-gray-dark">Application Name: {{project[index]['applicationName']}}</strong>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex text-muted pt-1">
+        <div class="pb-2 mb-0 small lh-sm border-bottom w-100">
+          <div class="d-flex justify-content-between">
+            <strong class="text-gray-dark">Application Version: {{project[index]['applicationVersion']}}</strong>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex text-muted pt-1">
+        <div class="pb-2 mb-0 small lh-sm border-bottom w-100">
+          <div class="d-flex justify-content-between">
+            <strong class="text-gray-dark">Application manager: {{project[index]['applicationOwner']}}</strong>
+          </div>
+        </div>
+      </div>
+      <h4 class="pb-2 mb-0">Wiki</h4>
+      <div *ngIf="project[index]['wiki'] != '', else elseBlock ">{{project[index]['wiki']}}</div>
+      <ng-template #elseBlock><div class="noWiki"><h3>no Wiki</h3></div> </ng-template>
+      <hr>
+      <h6 class="pb-3 mb-0">REPOSITORIES</h6>
+      <h6 class=" pb-2 mb-0">ABP</h6>
+
+    </div>
+
+
+  </main>
+
+</div>

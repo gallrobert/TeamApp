@@ -1,0 +1,26 @@
+.navbar{
+  background: #E20074;
+  height: 50px;
+}
+button{
+  background: white;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.nav-button{
+
+  font-weight: 900;
+  transition-duration: 0.5s;
+}
+.nav-button:hover{
+  transition-duration: 0.5s;
+  transform: scale(1.1);
+}
+.nav-button a {
+  text-decoration: none;
+  color: white;
+}
+.nav-button :active {
+  color: black
+}
+

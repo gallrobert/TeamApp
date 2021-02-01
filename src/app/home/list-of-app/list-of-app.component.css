@@ -1,0 +1,23 @@
+.container{
+  margin-top: 20px;
+  height: auto;
+}
+.red{
+  background: red;
+}
+
+.blue{
+  background: cornflowerblue;
+}
+
+.orange{
+  background: orange;
+}
+
+.text{
+  margin-top: 3px;
+}
+.list{
+float: left;
+  margin: 5px;
+}

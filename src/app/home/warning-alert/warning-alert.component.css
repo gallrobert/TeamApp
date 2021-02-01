@@ -1,0 +1,30 @@
+.alert-button{
+  height: 150px;
+  width: 90%;
+  float: left;
+  border-radius: 10px;
+  text-align: center;
+}
+.text{
+  font-weight: bold;
+}
+.alert-button img{
+  position: relative;
+  padding-top: 5px;
+  padding-left: 5px;
+
+}
+.container{
+  margin-top: 10px;
+}
+.red{
+  background: red;
+}
+
+.blue{
+  background: cornflowerblue;
+}
+
+.orange{
+  background: orange;
+}
